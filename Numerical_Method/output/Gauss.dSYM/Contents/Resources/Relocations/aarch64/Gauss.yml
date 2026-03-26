@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zihome/Documents/University/Metropolitan-University/Numerical_Method/output/Gauss'
+relocations:     []
+...
