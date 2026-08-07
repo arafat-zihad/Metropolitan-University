@@ -9,52 +9,57 @@ int main()
     cin >> n;
 
     // Arrays
-    int p[n], at[n], bt[n], pr[n];
-    int rt[n], ct[n], tat[n], wt[n]; 
+    int p[n], at[n], bt[n];
+    int rt[n]; // Remaining Time
+    int ct[n], tat[n], wt[n];
 
-    cout << "\nEnter Process ID, Arrival Time, Burst Time and Priority:\n";
+    // Keeps track of whether a process has finished
+    bool completed[n];
+
+    cout << "\nEnter Process ID, Arrival Time and Burst Time:\n";
 
     // Input
     for (int i = 0; i < n; i++)
     {
-        cin >> p[i] >> at[i] >> bt[i] >> pr[i];
+        cin >> p[i] >> at[i] >> bt[i];
 
-        // Initially Remaining Time = Burst Time
-        rt[i] = bt[i];
+        rt[i] = bt[i]; // Initially remaining time = burst time
+        completed[i] = false;
     }
 
+    // Current CPU time
     int time = 0;
-    int completed = 0;
 
-    // Continue until every process finishes
-    while (completed < n)
+    // Number of completed processes
+    int done = 0;
+
+    // Continue until all processes finish
+    while (done < n)
     {
         // Index of selected process
         int idx = -1;
 
-        // Lowest priority value found
-        int highestPriority = INT_MAX;
+        // Smallest Remaining Time found
+        int shortestRT = INT_MAX;
 
         // -----------------------------
-        // Find the highest priority process
-        // among the arrived processes
+        // Find process with shortest
+        // remaining time
         // -----------------------------
         for (int i = 0; i < n; i++)
         {
-            // Process must have arrived
-            // and must not be completed
-            if (at[i] <= time && rt[i] > 0)
+            // Process has arrived and is not completed
+            if (at[i] <= time && completed[i] == false)
             {
-                // Smaller priority value means higher priority
-                if (pr[i] < highestPriority)
+                if (rt[i] < shortestRT)
                 {
-                    highestPriority = pr[i];
-                    idx = i; 
+                    shortestRT = rt[i];
+                    idx = i;
                 }
 
-                // If priority is same,
-                // choose earlier arrival time
-                else if (pr[i] == highestPriority)
+                // If Remaining Time is same,
+                // choose earlier Arrival Time
+                else if (rt[i] == shortestRT)
                 {
                     if (at[i] < at[idx])
                     {
@@ -65,7 +70,7 @@ int main()
         }
 
         // -----------------------------
-        // No process has arrived yet
+        // If no process has arrived,
         // CPU remains idle
         // -----------------------------
         if (idx == -1)
@@ -76,10 +81,11 @@ int main()
 
         // -----------------------------
         // Execute selected process
-        // for only ONE unit of time
-        // (Preemptive Scheduling)
+        // for only 1 unit
         // -----------------------------
         rt[idx]--;
+
+        // Increase current time
         time++;
 
         // -----------------------------
@@ -87,25 +93,30 @@ int main()
         // -----------------------------
         if (rt[idx] == 0)
         {
-            ct[idx] = time;
-            tat[idx] = ct[idx] - at[idx];
-            wt[idx] = tat[idx] - bt[idx];
+            completed[idx] = true;
+            done++;
 
-            completed++;
+            // Completion Time
+            ct[idx] = time;
+
+            // Turnaround Time = CT - AT
+            tat[idx] = ct[idx] - at[idx];
+
+            // Waiting Time = TAT - BT
+            wt[idx] = tat[idx] - bt[idx];
         }
     }
 
     // -----------------------------
     // Display Result
     // -----------------------------
-    cout << "\nP\tAT\tBT\tPR\tCT\tTAT\tWT\n";
+    cout << "\nP\tAT\tBT\tCT\tTAT\tWT\n";
 
     for (int i = 0; i < n; i++)
     {
         cout << "P" << p[i]
              << "\t" << at[i]
              << "\t" << bt[i]
-             << "\t" << pr[i]
              << "\t" << ct[i]
              << "\t" << tat[i]
              << "\t" << wt[i]
