@@ -86,7 +86,7 @@ int main()
         // ---------------------------------------------------
         // Add newly arrived processes into Ready Queue
         // ---------------------------------------------------
-        while (next < n && at[next] <= time)
+        while (next < n && at[next] <= time) //w i i 
         {
             q.push(next);
             next++;

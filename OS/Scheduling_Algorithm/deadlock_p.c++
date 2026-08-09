@@ -53,7 +53,7 @@ int main(){
     int count = 0;
 
     while (count < n)        // b f i b f i br.
-    {                       // i f
+    {                       // i f -> f f s c
         bool found = false;
         for (int i = 0; i < n; i++)
         {
