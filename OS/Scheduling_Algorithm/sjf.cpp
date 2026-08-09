@@ -78,24 +78,17 @@ int main()
         }
 
         // -----------------------------
-        // Execute selected process
+        // Execute selected process 
         // completely
         // -----------------------------
         time += bt[idx];
 
-        // Completion Time
-        ct[idx] = time;
-
-        // Turnaround Time = CT - AT
-        tat[idx] = ct[idx] - at[idx];
-
-        // Waiting Time = TAT - BT
-        wt[idx] = tat[idx] - bt[idx];
-
-        // Mark process as completed
         completed[idx] = true;
-
         done++;
+        
+        ct[idx] = time;
+        tat[idx] = ct[idx] - at[idx];
+        wt[idx] = tat[idx] - bt[idx];
     }
 
     // -----------------------------

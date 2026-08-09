@@ -46,7 +46,7 @@ int main()
             if (at[i] <= time && rt[i] > 0)
             {
                 // Smaller priority value means higher priority
-                if (pr[i] < highestPriority)
+                if (pr[i] < highestPriority) 
                 {
                     highestPriority = pr[i];
                     idx = i; 

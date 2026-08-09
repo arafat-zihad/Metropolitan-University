@@ -10,8 +10,7 @@ int main()
 
     // Arrays
     int p[n], at[n], bt[n];
-    int rt[n]; // Remaining Time
-    int ct[n], tat[n], wt[n];
+    int rt[n], ct[n], tat[n], wt[n];
 
     // Keeps track of whether a process has finished
     bool completed[n];
@@ -76,7 +75,7 @@ int main()
         if (idx == -1)
         {
             time++;
-            continue;
+            continue; 
         }
 
         // -----------------------------
@@ -84,8 +83,6 @@ int main()
         // for only 1 unit
         // -----------------------------
         rt[idx]--;
-
-        // Increase current time
         time++;
 
         // -----------------------------
@@ -96,13 +93,8 @@ int main()
             completed[idx] = true;
             done++;
 
-            // Completion Time
             ct[idx] = time;
-
-            // Turnaround Time = CT - AT
             tat[idx] = ct[idx] - at[idx];
-
-            // Waiting Time = TAT - BT
             wt[idx] = tat[idx] - bt[idx];
         }
     }
