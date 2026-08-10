@@ -1,10 +1,9 @@
-//Deadlock
+// Deadlock
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    // Number of processes and resources
     int n, m;
 
     cout << "Enter number of processes: ";
@@ -13,13 +12,11 @@ int main()
     cout << "Enter number of resources: ";
     cin >> m;
 
-    // Arrays
     int allocation[n][m];
     int maximum[n][m];
     int need[n][m];
     int available[m];
 
-    // Input Allocation Matrix
     cout << "\nEnter Allocation Matrix:\n";
     for (int i = 0; i < n; i++)
     {
@@ -29,7 +26,6 @@ int main()
         }
     }
 
-    // Input Maximum Matrix
     cout << "\nEnter Maximum Matrix:\n";
     for (int i = 0; i < n; i++)
     {
@@ -39,17 +35,12 @@ int main()
         }
     }
 
-    // Input Available Resources
     cout << "\nEnter Available Resources:\n";
     for (int j = 0; j < m; j++)
     {
         cin >> available[j];
     }
 
-    // -----------------------------
-    // Calculate Need Matrix
-    // Need = Maximum - Allocation
-    // -----------------------------
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -58,29 +49,23 @@ int main()
         }
     }
 
-    // Work array
-    int work[m]; //focus
+    int work[m]; 
 
     for (int j = 0; j < m; j++)
     {
         work[j] = available[j];
     }
 
-    // Finish array
-    bool finish[n]; //focus
+    bool finish[n]; 
 
     for (int i = 0; i < n; i++)
     {
         finish[i] = false;
     }
 
-    // Safe sequence
-    int safeSequence[n]; //focus
+    int safeSequence[n]; 
     int count = 0;
 
-    // -----------------------------
-    // Banker's Algorithm
-    // -----------------------------
     while (count < n)
     {
         bool found = false;
@@ -91,7 +76,6 @@ int main()
             {
                 bool possible = true;
 
-                // Check Need <= Work
                 for (int j = 0; j < m; j++)
                 {
                     if (need[i][j] > work[j])
@@ -103,7 +87,6 @@ int main()
 
                 if (possible)
                 {
-                    // Release allocated resources
                     for (int j = 0; j < m; j++)
                     {
                         work[j] += allocation[i][j];
@@ -116,17 +99,12 @@ int main()
                 }
             }
         }
-
-        // No process can execute
         if (found == false)
         {
             break;
         }
     }
 
-    // -----------------------------
-    // Display Result
-    // -----------------------------
     if (count == n)
     {
         cout << "\nSystem is in SAFE state.\n";
