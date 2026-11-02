@@ -34,8 +34,24 @@ import pandas as pd;
 # df = pd.concat([df, new_rows])
 # print(df)
 
-df = pd.read_csv("data.csv")
-print(df)
+df = pd.read_csv("AI/Pandas/P-1/data.csv", index_col="Name")
+# df = pd.read_json("AI/Pandas/P-1/data.json")
+# print(df.to_string())
+
+
+# print(df["Name"])
+# print(df["Name"].to_string())
+# print(df["Weight"].to_string())
+# print(df[["Name", "Height", "Weight"]])
+
+# print(df.loc["Pikachu":"Nidorina", ["Height", "Weight"]])
+
+pokemon = input("Enter a Pokemon name: ")
+
+try: 
+    print(df.loc[pokemon])
+except KeyError:
+    print(f"{pokemon} not found")
 
 
 """
@@ -61,4 +77,18 @@ print(df)
 
 >> Importing CSV
 - hwo to import .csv
+* use relative path inside read_csv like read_cse(AI/Pandas/P-1/data.csv)
+- how to print full dataset?
+- how to import .json file
+
+>> Selection
+- hwo to select and print by column?
+- hwo to print multiple column
+- how to selcet and print by rows?
+- how to set a column as index then find row using the column?
+- how to print all between two?
+- how to print rows between two using iloc?
+- how to print rows and column between two using iloc?
+# - how to search for a value using user input?
+
 """
