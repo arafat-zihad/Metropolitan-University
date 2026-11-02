@@ -34,6 +34,8 @@ import pandas as pd;
 # df = pd.concat([df, new_rows])
 # print(df)
 
+df = pd.read_csv("data.csv")
+print(df)
 
 
 """
