@@ -1,0 +1,101 @@
+student_id,department,gender,study_hours_per_week,attendance_percentage,sleep_hours_per_night,commute_time_minutes,internet_access,class_participation,previous_academic_result,assignment_score,midterm_score,final_exam_score,total_score,passed_course
+STU001,EEE,Female,15,81,8,22,Sometimes unreliable,High,Average,70,56,73,66,Yes
+STU002,CSE,Male,20,78,8,40,Reliable,Low,Good,72,63,75,70,Yes
+STU003,BBA,Male,22,59,6,53,Reliable,Medium,Good,67,68,82,74,Yes
+STU004,CSE,Female,5,73,6,14,Reliable,Medium,Good,62,63,53,58,Yes
+STU005,BBA,Female,13,80,7,54,Limited,Low,Good,51,43,45,46,No
+STU006,EEE,Female,1,76,7,26,Limited,Medium,Average,41,38,50,44,No
+STU007,CSE,Male,5,94,7,33,Reliable,Low,Needs support,41,50,43,45,No
+STU008,CSE,Female,,79,7,49,Reliable,High,Average,52,62,58,58,Yes
+STU009,CSE,Female,14,71,9,11,Sometimes unreliable,High,Good,78,39,69,60,Yes
+STU010,EEE,Female,9,82,8,32,Reliable,Medium,Needs support,55,70,42,54,Yes
+STU011,CSE,Female,11,94,7,19,Reliable,Medium,Good,60,63,55,59,Yes
+STU012,CSE,Male,8,63,7,46,Sometimes unreliable,Medium,Excellent,54,54,69,61,Yes
+STU013,English,Male,14,72,8,50,Limited,Medium,Needs support,52,26,37,36,No
+STU014,CSE,Male,5,77,8,18,Reliable,Low,Excellent,43,69,60,60,Yes
+STU015,BBA,Male,17,67,7,14,Reliable,Medium,Good,66,76,63,68,Yes
+STU016,English,Male,1,91,7,39,Limited,Low,Average,44,36,21,31,No
+STU017,CSE,Female,9,79,7,60,Reliable,High,Good,78,49,59,59,Yes
+STU018,EEE,Male,10,69,7,35,Sometimes unreliable,Medium,Average,47,54,56,54,Yes
+STU019,BBA,Female,14,90,9,56,Reliable,Medium,Good,54,75,54,61,Yes
+STU020,English,Female,18,,9,5,Reliable,High,Needs support,68,51,64,60,Yes
+STU021,CSE,Male,4,86,7,29,Reliable,High,Excellent,67,69,66,67,Yes
+STU022,English,Male,12,64,7,25,Reliable,High,Good,74,55,68,65,Yes
+STU023,CSE,Female,11,100,7,24,Reliable,Medium,Good,72,59,66,65,Yes
+STU024,EEE,Female,10,57,6,64,Sometimes unreliable,Low,Excellent,43,32,53,44,No
+STU025,CSE,Female,2,64,7,23,Reliable,Medium,Average,46,35,38,39,No
+STU026,EEE,Male,5,70,7,48,Sometimes unreliable,Low,Good,43,38,43,41,No
+STU027,EEE,Male,6,80,7,57,Reliable,Low,Good,51,34,50,45,No
+STU028,EEE,Female,15,73,9,27,Reliable,High,Average,54,61,67,62,Yes
+STU029,EEE,Male,11,72,7,60,Reliable,Medium,Excellent,62,73,62,66,Yes
+STU030,EEE,Male,17,85,6,27,Reliable,Medium,Needs support,56,59,45,52,Yes
+STU031,English,Female,7,76,7,9,Reliable,High,Average,46,52,55,52,Yes
+STU032,BBA,Female,11,89,7,44,Reliable,Medium,Average,,53,56,56,Yes
+STU033,CSE,Male,16,75,8,55,Reliable,High,Needs support,51,52,63,57,Yes
+STU034,EEE,Male,21,79,9,49,Limited,High,Average,73,68,64,67,Yes
+STU035,EEE,Male,13,72,7,32,Reliable,Medium,Needs support,46,39,49,45,No
+STU036,CSE,Male,4,89,6,17,Sometimes unreliable,High,Needs support,57,46,56,53,Yes
+STU037,BBA,Female,4,84,6,42,Reliable,Medium,Good,65,55,52,56,Yes
+STU038,English,Female,19,74,5,41,Reliable,High,Good,82,72,73,74,Yes
+STU039,BBA,Male,7,77,8,38,Reliable,Low,Good,48,53,60,55,Yes
+STU040,BBA,Female,18,98,8,6,Reliable,High,Average,92,74,45,65,Yes
+STU041,EEE,Male,14,79,7,57,Limited,Low,Excellent,67,63,57,61,Yes
+STU042,CSE,Female,8,72,5,29,Reliable,Medium,Excellent,67,74,56,64,Yes
+STU043,CSE,Female,9,59,8,41,Reliable,Low,Average,40,45,53,48,No
+STU044,CSE,Female,11,78,7,43,Limited,High,Needs support,59,32,43,42,No
+STU045,EEE,Female,,90,7,24,Reliable,Medium,Average,65,65,49,58,Yes
+STU046,EEE,Female,4,70,8,70,Reliable,Low,Needs support,33,34,28,31,No
+STU047,CSE,Female,14,90,9,28,Reliable,Low,Good,70,54,46,54,Yes
+STU048,BBA,Male,3,72,7,53,Sometimes unreliable,Medium,Average,53,35,56,48,No
+STU049,EEE,Female,5,56,6,9,Reliable,Low,Good,64,51,45,51,Yes
+STU050,BBA,Male,10,92,8,33,Sometimes unreliable,Medium,Good,64,78,61,68,Yes
+STU051,CSE,Female,4,49,8,5,Reliable,Low,Good,40,62,25,41,No
+STU052,CSE,Male,6,59,7,24,Limited,High,Needs support,39,25,34,32,No
+STU053,CSE,Male,16,63,8,19,Reliable,Medium,Needs support,65,53,50,54,Yes
+STU054,EEE,Female,17,89,7,49,Sometimes unreliable,Medium,Good,57,42,67,56,Yes
+STU055,BBA,Male,18,74,8,44,Reliable,Low,Good,42,47,73,58,Yes
+STU056,English,Male,12,66,6,55,Sometimes unreliable,High,Good,67,60,64,63,Yes
+STU057,English,Male,9,53,7,68,Reliable,Medium,Average,55,53,41,48,No
+STU058,CSE,Female,17,81,6,36,Limited,Medium,Average,52,51,59,55,Yes
+STU059,EEE,Female,14,91,6,21,Sometimes unreliable,High,Needs support,66,56,70,64,Yes
+STU060,CSE,Female,11,73,9,54,Reliable,Medium,Good,63,53,48,53,Yes
+STU061,CSE,Female,13,100,8,7,Reliable,Medium,Good,72,74,64,69,Yes
+STU062,English,Male,10,57,6,22,Sometimes unreliable,Low,Good,52,35,46,43,No
+STU063,CSE,Female,8,83,9,34,Sometimes unreliable,High,Good,62,75,55,63,Yes
+STU064,English,Male,17,69,6,69,Reliable,Low,Good,46,38,68,53,Yes
+STU065,CSE,Female,9,59,7,10,Reliable,Medium,Excellent,57,56,61,58,Yes
+STU066,English,Male,15,78,8,17,Sometimes unreliable,High,Needs support,73,53,48,55,Yes
+STU067,CSE,Female,11,80,6,21,Limited,High,Average,65,62,65,64,Yes
+STU068,CSE,Male,5,86,5,24,Reliable,Medium,Needs support,40,55,49,49,No
+STU069,BBA,Female,9,62,8,29,Reliable,High,Needs support,39,33,54,44,No
+STU070,BBA,Male,15,74,8,50,Reliable,High,Average,71,67,54,62,Yes
+STU071,English,Male,6,89,8,56,Reliable,Medium,Excellent,75,63,92,78,Yes
+STU072,BBA,Male,13,75,9,45,Reliable,High,Good,81,66,52,63,Yes
+STU073,EEE,Female,11,,8,18,Reliable,High,Needs support,51,35,43,42,No
+STU074,CSE,Female,13,89,7,38,Sometimes unreliable,Medium,Good,68,51,57,57,Yes
+STU075,CSE,Male,12,81,7,34,Reliable,Low,Needs support,42,31,44,39,No
+STU076,EEE,Female,12,65,9,30,Limited,High,Needs support,49,53,41,47,No
+STU077,English,Male,10,70,6,10,Reliable,High,Good,76,64,59,64,Yes
+STU078,English,Male,11,68,6,32,Reliable,High,Needs support,46,61,56,56,Yes
+STU079,CSE,Male,12,70,6,55,Reliable,Medium,Average,43,45,53,48,No
+STU080,EEE,Male,13,52,7,55,Reliable,Low,Average,45,44,53,48,No
+STU081,CSE,Female,10,81,8,5,Sometimes unreliable,Medium,Good,46,68,57,59,Yes
+STU082,EEE,Male,7,69,7,13,Reliable,High,Excellent,54,87,68,72,Yes
+STU083,BBA,Male,11,57,8,32,Reliable,Low,Average,35,47,38,41,No
+STU084,EEE,Female,11,73,7,13,Reliable,Medium,Average,74,40,62,57,Yes
+STU085,CSE,Male,14,64,6,8,Reliable,Medium,Good,63,46,65,58,Yes
+STU086,CSE,Male,11,77,,42,Reliable,Medium,Average,63,69,51,60,Yes
+STU087,English,Male,12,82,7,26,Sometimes unreliable,Medium,Needs support,36,39,46,42,No
+STU088,English,Female,16,84,4,16,Reliable,Medium,Needs support,72,67,69,69,Yes
+STU089,CSE,Female,11,81,6,14,Sometimes unreliable,High,Needs support,77,57,52,59,Yes
+STU090,BBA,Female,11,81,7,53,Reliable,High,Good,69,62,63,64,Yes
+STU091,English,Male,17,84,6,53,Reliable,Medium,Average,59,58,48,54,Yes
+STU092,English,Female,1,87,9,40,Reliable,Medium,Good,55,53,53,53,Yes
+STU093,CSE,Female,12,74,7,51,Reliable,High,Needs support,49,62,63,60,Yes
+STU094,EEE,Male,9,65,6,42,Reliable,High,Good,66,48,55,55,Yes
+STU095,CSE,Female,17,94,8,67,Reliable,Low,Good,53,69,73,68,Yes
+STU096,EEE,Male,10,84,9,35,Reliable,Low,Good,73,38,50,50,Yes
+STU097,English,Female,5,77,6,12,Sometimes unreliable,Medium,Needs support,42,26,21,27,No
+STU098,CSE,Male,10,77,8,60,Limited,Medium,Needs support,32,37,51,42,No
+STU099,BBA,Male,5,73,8,17,Reliable,Low,Needs support,41,19,10,19,No
+STU100,EEE,Male,17,89,7,28,Sometimes unreliable,High,Excellent,81,70,65,70,Yes

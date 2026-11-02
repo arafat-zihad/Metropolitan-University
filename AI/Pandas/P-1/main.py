@@ -89,6 +89,10 @@ except KeyError:
 - how to print all between two?
 - how to print rows between two using iloc?
 - how to print rows and column between two using iloc?
-# - how to search for a value using user input?
+- how to search for a value using user input?
+
+>> Filtering
+
+
 
 """
