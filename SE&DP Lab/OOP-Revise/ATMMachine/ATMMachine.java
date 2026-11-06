@@ -5,7 +5,7 @@ class ATM{
     int PIN = 4321;
     float Balance;
 
-    public void checkPin(){
+    public ATM(int pin) {
         System.out.println("Enter the your pin: ");
         Scanner sc = new Scanner(System.in);
         int enteredPin = sc.nextInt();
@@ -72,7 +72,6 @@ class ATM{
 
 public class ATMMachine{
     public static void main(String[] args) {
-        ATM user1 = new ATM();
-        user1.checkPin();
+        ATM user1 = new ATM(4321);
     }
 }
