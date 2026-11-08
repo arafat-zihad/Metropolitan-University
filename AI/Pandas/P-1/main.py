@@ -46,12 +46,40 @@ df = pd.read_csv("AI/Pandas/P-1/data.csv", index_col="Name")
 
 # print(df.loc["Pikachu":"Nidorina", ["Height", "Weight"]])
 
-pokemon = input("Enter a Pokemon name: ")
+# pokemon = input("Enter a Pokemon name: ")
 
-try: 
-    print(df.loc[pokemon])
-except KeyError:
-    print(f"{pokemon} not found")
+# try: 
+#     print(df.loc[pokemon])
+# except KeyError:
+#     print(f"{pokemon} not found")
+
+# Filtering:
+# tall_pokemon = df[df["Height"] >= 2]
+# Legend_pokemon = df[df["Legendary"] == 1]
+# print(Legend_pokemon)
+
+# Aggregate:
+# print(df.mean(numeric_only=True))
+# print(df.sum(numeric_only=True))
+# print(df.max(numeric_only=True))
+# print(df["Height"].mean())
+# print(df["Height"].max())
+
+# group = df.groupby("Type1")
+# print(group["Height"].mean())
+
+
+# Data cleaning:
+# df = df.drop(columns=["Legendary", "No"])
+
+# df = df.dropna(subset=["Type2"])
+
+# df = df.fillna({"Type2": "TIKTIK"})
+
+# df["Type1"] = df["Type1"].replace({"Grass": "GRASS"})
+
+df["Legendary"] = df["Legendary"].astype(bool)
+print(df.to_string())
 
 
 """
@@ -92,6 +120,23 @@ except KeyError:
 - how to search for a value using user input?
 
 >> Filtering
+>> how to filter a row with condition?
+
+
+>> Aggregate functions:
+- how to use mean, sum, max, min with numeric_only == True
+- how to use use without numeric_only == True
+- how to use aggregate fucntions for Single column 
+- groupby
+
+>> Data cleaning 
+- how to drop irrelevant column
+- handling missing value
+- how to fill not available value 
+- how to fix inconsistant data or replace them
+- how to standerdize text or make all data in a column lowercase
+- how to fix data type of a column
+- how to remove duplicate values 
 
 
 
